@@ -22,7 +22,7 @@ func main() {
 	tpl, _ = tpl.ParseGlob("public/*.html")
 	port := os.Getenv("PORT")
 	//the diffenrent possible path
-	http.HandleFunc("/Home", getFormeHandler)
+	http.HandleFunc("/", getFormeHandler)
 	log.Print("Listening on :" + port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
