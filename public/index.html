@@ -9,14 +9,12 @@
 <body>
     <section>
         <form action="/" method="POST">
-            <select name="choiceInfo" id="choiceID">
-                <option>
-                    <input type="submit" value="choix 1" class="submit">
-                </option>   
-                <option>
-                    <input type="submit" value="choix 2" class="submit">
-                </option>
-            </select>
+            <p>{{.Choix}}</p>
+            {{if eq .Choix "Choix 1" }}
+            <input type="submit" value="choix 1" name="Submit">
+            {{else}}
+            <input type="submit" value="choix 2" name="Submit">
+            {{end}}
 
             
         </form>
@@ -27,3 +25,12 @@
     </section>
 </body>
 </html>
+
+<!-- 
+    eq Returns the boolean truth of arg1 == arg2
+    ne Returns the boolean truth of arg1 != arg2
+    lt Returns the boolean truth of arg1 <  arg2
+    le Returns the boolean truth of arg1 <= arg2
+    gt Returns the boolean truth of arg1 >  arg2
+    ge Returns the boolean truth of arg1 >= arg2 
+-->

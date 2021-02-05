@@ -14,6 +14,7 @@ type JSON struct {
 	Title  string
 	Auteur string
 	About  string
+	Choix  string
 }
 
 var tpl *template.Template
