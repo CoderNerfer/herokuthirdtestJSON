@@ -11,9 +11,9 @@
         <form action="/" method="POST">
             <p>{{.Choix}}</p>
             {{if eq .Choix "Choix 1" }}
-            <input type="submit" value="choix 1" name="Submit">
-            {{else}}
             <input type="submit" value="choix 2" name="Submit">
+            {{else}}
+            <input type="submit" value="choix 1" name="Submit">
             {{end}}
 
             

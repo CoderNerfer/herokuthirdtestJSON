@@ -35,7 +35,7 @@ func getFormeHandler(w http.ResponseWriter, r *http.Request) {
 	// unmarshall (tres sombre --> aller voir)
 	json.Unmarshal(jsonfile, &data)
 
-	choice := r.FormValue("choiceInfo")
+	choice := r.FormValue("Submit")
 	if choice == "choix 2" {
 		tpl.ExecuteTemplate(w, "index.html", data[1])
 	} else {
