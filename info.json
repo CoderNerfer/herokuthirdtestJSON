@@ -2,13 +2,13 @@
     {
         "Title" : "Heroku - JSON",
         "Auteur" : "Clément",
-        "About" : "Je suis un élève en B1 informatique passionée de WEB",
+        "About" : "Je suis un élève en B1 informatique passioné de WEB",
         "Choix" : "Choix 1"
     },
     {
         "Title" : "Heroku - JSON - 2",
         "Auteur" : "Clément - 2",
-        "About" : "Je suis un élève en B1 informatique passionée de WEB - 2",
+        "About" : "Je suis un élève en B1 informatique passioné de WEB - 2",
         "Choix" : "Choix 2"
     }
 
